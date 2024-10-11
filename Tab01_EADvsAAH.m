@@ -93,11 +93,6 @@ for w = 1:numel(W2_adapt)
 
 end
 
-% Some strange outlier
-if W2_adapt(206).EADvEAH == Inf
-    W2_adapt(206).EADvEAH = 0;
-end
-
 % Fill district table W with aggregates
 for w = 1:numel(W_adapt)
 %   Same as above
